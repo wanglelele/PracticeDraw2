@@ -47,7 +47,7 @@ public class Practice08XfermodeView extends View {
         canvas.drawBitmap(bitmap1, 0, 0, paint);
         paint.setXfermode(xfermode);
         // 第一个：PorterDuff.Mode.SRC
-        canvas.drawBitmap(bitmap2, 0, 0, paint);
+        canvas.drawBitmap(bitmap2, 200, 0, paint);
         paint.setXfermode(null);
 
         canvas.drawBitmap(bitmap1, bitmap1.getWidth() + 100, 0, paint);
