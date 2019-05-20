@@ -3,6 +3,7 @@ package com.hencoder.hencoderpracticedraw2.practice;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.BlurMaskFilter;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
@@ -40,6 +41,7 @@ public class Practice14MaskFilterView extends View {
         // 用 Paint.setMaskFilter 来设置不同的 BlurMaskFilter
 
         // 第一个：NORMAL
+        paint.setMaskFilter(new BlurMaskFilter(130, BlurMaskFilter.Blur.NORMAL));
         canvas.drawBitmap(bitmap, 100, 50, paint);
 
         // 第二个：INNER
